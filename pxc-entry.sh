@@ -30,7 +30,7 @@ fi
 		mysqld --user=mysql --datadir="$DATADIR" --skip-networking &
 		pid="$!"
 
-		mysql=( mysql --protocol=socket -uroot -h localhost)
+		mysql=( mysql --protocol=socket -uroot -h localhost )
 
 		for i in {30..0}; do
 			if echo 'SELECT 1' | "${mysql[@]}" &> /dev/null; then
