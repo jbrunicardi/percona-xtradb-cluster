@@ -21,6 +21,5 @@ RUN chmod a+x /usr/bin/jq
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 3306 4567 4568
-ONBUILD RUN yum update -y
 
 CMD [""]
